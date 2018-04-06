@@ -2,5 +2,5 @@
 
 
 export SCRIPT_HOME=~/parityscripts
-sed -i 's/USERNAME/$USER/g' $SCRIPT_HOME/parityservice/parity.service
-sudo cp ~/$SCRIPT_HOME/parityservice/parity.service /etc/systemd/system
+sed -i 's/USERNAME/$USER/g' $SCRIPT_HOME/parity.service
+sudo cp ~/$SCRIPT_HOME/parity.service /etc/systemd/system
