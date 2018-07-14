@@ -1,0 +1,21 @@
+[parity]
+# Local Development Chain
+chain = "dev"
+# Blockchain and settings will be stored in ~/data.
+base_path = "~/data"
+# Don't save pending local transactions to disk to be restored whenever the node restarts.
+no_persistent_txqueue = true
+
+[rpc]
+#  JSON-RPC will be listening for connections on IP 0.0.0.0.
+interface = "0.0.0.0"
+# Only selected APIs will be exposed over this interface.
+apis = ["web3", "eth", "pubsub", "net", "parity", "parity_pubsub", "traces", "rpc", "shh", "shh_pubsub", "personal", "parity_accounts", "signer", "parity_set", "secretstore"]
+
+[websockets]
+# Only selected APIs will be exposed over this interface.
+apis = ["web3", "eth", "pubsub", "net", "parity", "parity_pubsub", "traces", "rpc", "shh", "shh_pubsub", "personal", "parity_accounts", "signer", "parity_set", "secretstore"]
+
+[footprint]
+# Keep all state trie data. No pruning.
+pruning = "archive"
